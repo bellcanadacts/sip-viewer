@@ -1,0 +1,1 @@
+![http://sip-viewer.googlecode.com/svn/images/sip-viewer-plugin.png](http://sip-viewer.googlecode.com/svn/images/sip-viewer-plugin.png)
