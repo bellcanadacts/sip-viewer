@@ -260,8 +260,14 @@ public class TextLogMessageParser {
                                   StringBuilder pDirection)
   {
     int state = STATE_DEFAULT;
+    boolean stopParsing = false;
 
     for (int n = 0; n < pDetails.length(); n++) {
+
+      if(stopParsing) {
+        break;
+      }
+
       char c = pDetails.charAt(n);
 
       switch (state) {
@@ -336,10 +342,10 @@ public class TextLogMessageParser {
 
       // -- destination
       case STATE_DESTINATION:
-        if (c == ' ')
+        if (c == ' ' && pDestination.length() == 0)
           continue;
-        else if (c == '\n' || c == '\r')
-          break;
+        else if (c == ' ' || c == '\n' || c == '\r')
+          stopParsing = true;
         else
           pDestination.append(c);
         break;
