@@ -46,7 +46,7 @@ Finally, an important feature was to control the parser to not only aggregate ac
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
+			<version>4.13.1</version>
 		</dependency>
 	</dependencies>
 
