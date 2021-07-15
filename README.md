@@ -70,6 +70,10 @@ Not all the Command Line Interface options are exposed with the plugin. In order
 
 ## Release Notes
 
+### 1.9.3
+
+* Exclude characters after the destination when parsing log message details
+
 ### 1.8.4
 
 * When a trace includes an invite dialog and a subscribe dialog, if the event id of the subscribe dialog matches the from tag of the invite dialog the traces will be correlated
